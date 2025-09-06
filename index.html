@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD231 Course Home Page for Web and Computer Programming Certificate" />
+  <meta name="author" content="Your Name" />
+  <title>WDD231 Home Page</title>
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- JavaScript Files -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="site logo" width="1" height="1">
+    <span>My Site Name</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+  </header>
+
+  <nav id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final/index.html">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Welcome to my WDD231 course homepage. I'm currently pursuing the Web and Computer Programming Certificate.</p>
+    </section>
+
+    <section>
+      <h2>Course Certificate</h2>
+      <div id="course-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <div id="courses"></div>
+      <p>Total Credits: <span id="creditTotal">0</span></p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Feel free to connect with me through the social links below.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/byronrich" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourlinkedinusername" target="_blank">LinkedIn</a>
+      <a href="#">Other</a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Your Name | Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Google Font */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Layout */
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+header img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hamburger Button */
+.hamburger {
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630"; /* ☰ */
+  font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+  content: "\00D7"; /* × */
+}
+
+/* Navigation */
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  padding: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: #005a9c;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .social a {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}

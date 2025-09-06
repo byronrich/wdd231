@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+  /* Hide hamburger on large screens */
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  nav li {
+    padding: 0 1rem;
+  }
+
+  nav a {
+    font-weight: bold;
+    color: #005a9c;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer .social {
+    order: 1;
+  }
+
+  footer p {
+    order: 2;
+    margin: 0.5rem 0;
+  }
+}
