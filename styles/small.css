@@ -1,10 +1,14 @@
-/* Google Font */
+/* Typography & Base Styles */
 body {
-  font-family: 'Roboto', 'Open Sans' sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
+}
+
+h1, h2 {
+  color: #005a9c;
 }
 
 /* Header Layout */
@@ -75,8 +79,35 @@ section {
   margin-bottom: 2rem;
 }
 
-h1, h2 {
-  color: #005a9c;
+/* Buttons */
+button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border: none;
+  background-color: #005a9c;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004080;
+}
+
+/* Course Cards */
+.course {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.course.completed {
+  background-color: #e0ffe0;
+  border-color: #4caf50;
 }
 
 /* Footer */

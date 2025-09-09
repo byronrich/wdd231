@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD231 Course Home" />
+  <meta name="description" content="WDD231 Course Home Page for Byron Alexander Richardson" />
   <meta name="author" content="Byron Alexander Richardson" />
   <title>WDD231 Home Page</title>
 
@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Combined Google Fonts link -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <!-- Normalize CSS -->
@@ -27,16 +27,16 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="site logo" width="1" height="1">
+    <img src="images/logo.svg" alt="Site logo" width="1" height="1">
     <span>My Site Name</span>
-    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
   </header>
 
   <nav id="navigation">
     <ul>
-      <li><a href="index.html">Home</a>
-      <li><a href="chamber/index.html">Chamber</a>
-      <li><a href="final/index.html">Final</a></li>
+      <li><a href="index.html" title="Home Page">Home</a></li>
+      <li><a href="chamber/index.html" title="Chamber Project">Chamber</a></li>
+      <li><a href="final/index.html" title="Final Project">Final</a></li>
     </ul>
   </nav>
 
@@ -45,15 +45,15 @@
 
     <section>
       <h2>About Me</h2>
-      <p>Welcome to my WDD231 course homepage. I'm currently pursuing the Web and Computer Programming Certificate.</p>
+      <p>Welcome to my WDD231 course homepage. I'm currently pursuing the Web and Computer Programming Certificate at BYU-Idaho. This site showcases my progress and projects throughout the semester.</p>
     </section>
 
     <section>
       <h2>Course Certificate</h2>
       <div id="course-buttons">
-        <button id="all">All Courses</button>
-        <button id="wdd">WDD Courses</button>
-        <button id="cse">CSE Courses</button>
+        <button id="all" aria-label="Show all courses">All Courses</button>
+        <button id="wdd" aria-label="Show WDD courses">WDD Courses</button>
+        <button id="cse" aria-label="Show CSE courses">CSE Courses</button>
       </div>
       <div id="courses"></div>
       <p>Total Credits: <span id="creditTotal">0</span></p>
@@ -61,17 +61,17 @@
 
     <section>
       <h2>Contact</h2>
-      <p>Feel free to connect with me through the social links below.</p>
+      <p>Feel free to connect with me through the social links below. I'm always open to collaboration and feedback.</p>
     </section>
   </main>
 
   <footer>
     <div class="social">
-      <a href="https://github.com/byronrich" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourlinkedinusername" target="_blank">LinkedIn</a>
-      <a href="#">Other</a>
+      <a href="https://github.com/byronrich" target="_blank" title="GitHub Profile">GitHub</a>
+      <a href="https://linkedin.com/in/yourlinkedinusername" target="_blank" title="LinkedIn Profile">LinkedIn</a>
+      <a href="#" title="Other Social Link">Other</a>
     </div>
-    <p>&copy; <span id="currentyear"></span> Your Name | Utah, USA</p>
+    <p>&copy; <span id="currentyear"></span> Byron Alexander Richardson | Utah, USA</p>
     <p id="lastModified"></p>
   </footer>
 </body>
