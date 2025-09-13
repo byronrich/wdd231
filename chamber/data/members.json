@@ -2,56 +2,56 @@
   {
     "name": "Sunrise Bakery",
     "address": "123 Main St, Layton, UT",
-    "phone": "801-555-1234",
-    "website": "https://sunrisebakery.com",
+    "phone": "",
+    "website": "https://",
     "image": "sunrise.webp",
     "membership": 3
   },
   {
     "name": "TechHub Solutions",
     "address": "456 Innovation Blvd, Layton, UT",
-    "phone": "801-555-5678",
-    "website": "https://techhub.com",
+    "phone": "",
+    "website": "https://",
     "image": "techhub.webp",
     "membership": 2
   },
   {
     "name": "GreenLeaf Landscaping",
     "address": "789 Garden Way, Layton, UT",
-    "phone": "801-555-9012",
-    "website": "https://greenleaflandscaping.com",
+    "phone": "",
+    "website": "https://",
     "image": "greenleaf.webp",
     "membership": 1
   },
   {
     "name": "Layton Fitness Center",
     "address": "321 Workout Ln, Layton, UT",
-    "phone": "801-555-3456",
-    "website": "https://laytonfitness.com",
+    "phone": "",
+    "website": "https://",
     "image": "fitness.webp",
     "membership": 2
   },
   {
     "name": "Bright Minds Preschool",
     "address": "654 Learning St, Layton, UT",
-    "phone": "801-555-7890",
-    "website": "https://brightmindspreschool.com",
+    "phone": "",
+    "website": "https://",
     "image": "preschool.webp",
     "membership": 1
   },
   {
     "name": "Mountain View Realty",
     "address": "987 Summit Ave, Layton, UT",
-    "phone": "801-555-2345",
-    "website": "https://mountainviewrealty.com",
+    "phone": "",
+    "website": "https://",
     "image": "realty.webp",
     "membership": 3
   },
   {
     "name": "Layton Auto Repair",
     "address": "159 Engine Rd, Layton, UT",
-    "phone": "801-555-6789",
-    "website": "https://laytonautorepair.com",
+    "phone": "",
+    "website": "https://",
     "image": "autorepair.webp",
     "membership": 2
   }

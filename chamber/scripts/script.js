@@ -11,11 +11,11 @@ function displayMembers(members) {
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name}" />
+      <img src="images/${member.image}" alt="Logo for ${member.name}">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
+      <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
     `;
     container.appendChild(card);
   });
