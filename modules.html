@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Development Course</title>
+  <link rel="stylesheet" href="styles/modules.css">
+</head>
+<body>
+  <h1 id="courseTitle"></h1>
+
+  <label for="sectionNumber">Select Section:</label>
+  <select id="sectionNumber"></select>
+
+  <button id="enrollStudent">Enroll</button>
+  <button id="dropStudent">Drop</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Section</th>
+        <th>Enrolled</th>
+        <th>Capacity</th>
+      </tr>
+    </thead>
+    <tbody id="sections"></tbody>
+  </table>
+
+  <script type="module" src="scripts/modules.mjs"></script>
+</body>
+</html>
