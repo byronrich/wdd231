@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+nav a.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cta {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.6);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.cta-link {
+  background-color: #ffcc00;
+  color: #003366;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-link:hover {
+  background-color: #ffd633;
+}
+
+.events, .weather, .spotlights {
+  padding: 1em;
+}
+
+.spotlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.spotlight-card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  background-color: white;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.spotlight-card img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spotlights {
+    flex-direction: column;
+  }
+
+  .spotlight-card {
+    width: 100%;
+  }
+}

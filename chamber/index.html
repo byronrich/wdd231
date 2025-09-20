@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Layton Chamber of Commerce - Connect, Grow, and Thrive with Local Businesses" />
+  <meta name="keywords" content="Layton, Chamber of Commerce, Business, Networking, Utah" />
+  <meta name="author" content="Layton Chamber Web Team" />
+  <title>Layton Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Layton Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-small.jpg" media="(max-width: 600px)">
+        <img src="images/hero.jpg" alt="Layton Cityscape" loading="lazy" />
+      </picture>
+      <div class="cta">
+        <a href="#" class="cta-link">Join the Chamber Today!</a>
+      </div>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Business Networking Breakfast – Sept 25</li>
+        <li>Fall Festival – Oct 10</li>
+        <li>Small Business Saturday – Nov 30</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div id="weather-container">
+        <p id="current-temp"></p>
+        <p id="weather-desc"></p>
+        <div id="forecast"></div>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Layton Chamber of Commerce</p>
+  </footer>
+
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/spotlight.js"></script>
+</body>
+</html>
