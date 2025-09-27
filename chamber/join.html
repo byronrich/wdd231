@@ -1,53 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Join the Layton Chamber of Commerce</title>
   <meta name="description" content="Apply to become a member of the Layton Chamber of Commerce and grow your business." />
   <meta name="author" content="Alex Richardson" />
-  <link rel="stylesheet" href="styles/styles.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <style>
-    .membership-card {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease forwards;
-    }
-    .membership-card:nth-child(1) { animation-delay: 0.2s; }
-    .membership-card:nth-child(2) { animation-delay: 0.4s; }
-    .membership-card:nth-child(3) { animation-delay: 0.6s; }
-    .membership-card:nth-child(4) { animation-delay: 0.8s; }
 
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Join the Layton Chamber of Commerce" />
+  <meta property="og:description" content="Become a member of Layton's thriving business community. Enjoy exclusive benefits, events, and networking opportunities." />
+  <meta property="og:image" content="images/hero.png" />
+  <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/join.html" />
 
-    .modal {
-      display: none;
-      position: fixed;
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      padding: 1rem;
-      border: 2px solid #333;
-      z-index: 1000;
-    }
-
-    .modal.active {
-      display: block;
-    }
-
-    .modal-close {
-      float: right;
-      cursor: pointer;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
   <header>
@@ -152,16 +119,6 @@
     <p>2025 Layton Chamber of Commerce</p>
   </footer>
 
-  <script>
-    document.getElementById("timestamp").value = new Date().toISOString();
-
-    function openModal(id) {
-      document.getElementById(id).classList.add("active");
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).classList.remove("active");
-    }
-  </script>
+  <script src="scripts/join.js"></script>
 </body>
 </html>
