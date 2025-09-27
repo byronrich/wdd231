@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Layton Chamber of Commerce</title>
+  <meta name="description" content="Apply to become a member of the Layton Chamber of Commerce and grow your business." />
+  <meta name="author" content="Alex Richardson" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <style>
+    .membership-card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    .membership-card:nth-child(1) { animation-delay: 0.2s; }
+    .membership-card:nth-child(2) { animation-delay: 0.4s; }
+    .membership-card:nth-child(3) { animation-delay: 0.6s; }
+    .membership-card:nth-child(4) { animation-delay: 0.8s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 1rem;
+      border: 2px solid #333;
+      z-index: 1000;
+    }
+
+    .modal.active {
+      display: block;
+    }
+
+    .modal-close {
+      float: right;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a class="active" href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Layton Chamber of Commerce</h1>
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="firstName" title="First Name" autocomplete="given-name" required />
+      </label>
+      <label>
+        Last Name:
+        <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required />
+      </label>
+      <label>
+        Organizational Title:
+        <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required />
+      </label>
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required />
+      </label>
+      <label>
+        Organization Name:
+        <input type="text" name="organization" title="Organization Name" autocomplete="organization" required />
+      </label>
+      <label>
+        Membership Level:
+        <select name="membership" title="Membership Level">
+          <option value="NP">NP Membership (Free)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>
+        Organization Description:
+        <textarea name="description" title="Organization Description"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp" />
+      <input type="submit" value="Submit Application" />
+    </form>
+
+    <section class="membership-cards">
+      <div class="membership-card">
+        <h2>NP Membership</h2>
+        <a href="#" onclick="openModal('npModal')">View Benefits</a>
+      </div>
+      <div class="membership-card">
+        <h2>Bronze Membership</h2>
+        <a href="#" onclick="openModal('bronzeModal')">View Benefits</a>
+      </div>
+      <div class="membership-card">
+        <h2>Silver Membership</h2>
+        <a href="#" onclick="openModal('silverModal')">View Benefits</a>
+      </div>
+      <div class="membership-card">
+        <h2>Gold Membership</h2>
+        <a href="#" onclick="openModal('goldModal')">View Benefits</a>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="npModal" class="modal">
+      <span class="modal-close" onclick="closeModal('npModal')">X</span>
+      <h3>NP Membership Benefits</h3>
+      <p>Free membership for nonprofits. Includes event access and basic directory listing.</p>
+    </div>
+    <div id="bronzeModal" class="modal">
+      <span class="modal-close" onclick="closeModal('bronzeModal')">X</span>
+      <h3>Bronze Membership Benefits</h3>
+      <p>Includes training sessions, event discounts, and spotlight features.</p>
+    </div>
+    <div id="silverModal" class="modal">
+      <span class="modal-close" onclick="closeModal('silverModal')">X</span>
+      <h3>Silver Membership Benefits</h3>
+      <p>All Bronze benefits plus premium advertising and networking events.</p>
+    </div>
+    <div id="goldModal" class="modal">
+      <span class="modal-close" onclick="closeModal('goldModal')">X</span>
+      <h3>Gold Membership Benefits</h3>
+      <p>All Silver benefits plus homepage spotlight and exclusive leadership events.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>2025 Layton Chamber of Commerce</p>
+  </footer>
+
+  <script>
+    document.getElementById("timestamp").value = new Date().toISOString();
+
+    function openModal(id) {
+      document.getElementById(id).classList.add("active");
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+    }
+  </script>
+</body>
+</html>
