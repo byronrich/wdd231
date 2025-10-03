@@ -1,0 +1,80 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@600&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Lora', serif;
+  background-color: #f4f9f4;
+  color: #2e4d2c;
+  margin: 0;
+  padding: 2em;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #3a6b35;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.tagline {
+  font-style: italic;
+  color: #3a6b35;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+.back-link {
+  font-weight: bold;
+  color: #3a6b35;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #d0e0d0;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+}
+
+.forest-green {
+  background-color: #3a6b35;
+}
+
+.mint-cream {
+  background-color: #f4f9f4;
+  border: 1px solid #aaa;
+}
+
+.wireframe {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #3a6b35;
+}
