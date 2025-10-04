@@ -16,7 +16,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="directory.html">Directory</a></li>
       </ul>
     </nav>
   </header>
@@ -30,45 +30,7 @@
     <p>&copy; 2025 Layton Chamber of Commerce</p>
   </footer>
 
-  <script>
-    // Visit message logic
-    const messageArea = document.getElementById("visit-message");
-    const lastVisit = localStorage.getItem("lastVisit");
-    const now = Date.now();
-
-    if (!lastVisit) {
-      messageArea.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-      const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-      if (days < 1) {
-        messageArea.textContent = "Back so soon! Awesome!";
-      } else {
-        messageArea.textContent = `You last visited ${days} day${days === 1 ? "" : "s"} ago.`;
-      }
-    }
-    localStorage.setItem("lastVisit", now);
-
-    // Load JSON data
-    fetch("data/attractions.json")
-      .then(response => response.json())
-      .then(data => {
-        const grid = document.getElementById("discover-grid");
-        data.forEach((item, index) => {
-          const card = document.createElement("div");
-          card.className = "card";
-          card.style.gridArea = `card${index + 1}`;
-          card.innerHTML = `
-            <h2>${item.title}</h2>
-            <figure>
-              <img src="${item.image}" alt="${item.title}" loading="lazy" />
-            </figure>
-            <address>${item.address}</address>
-            <p>${item.description}</p>
-            <button>Learn More</button>
-          `;
-          grid.appendChild(card);
-        });
-      });
-  </script>
+  <!-- External JavaScript file -->
+  <script src="scripts/discover.js"></script>
 </body>
 </html>
