@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover Layton | Chamber of Commerce</title>
+
+  <!-- SEO and Accessibility Meta Tags -->
+  <meta name="description" content="Explore Layton, Utah through its parks, museums, trails, and attractions. Discover what makes our community vibrant and welcoming." />
+  <meta name="author" content="Student Name" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Discover Layton | Chamber of Commerce" />
+  <meta property="og:description" content="Layton offers scenic parks, engaging museums, and vibrant community spaces. Discover what makes it special." />
+  <meta property="og:image" content="images/og-image.webp" />
+  <meta property="og:url" content="https://yourdomain.com/chamber/discover.html" />
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px)" />
   <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)" />
 </head>
 <body>
   <header>
-    <h1>Layton Chamber of Commerce</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
+        <li><a href="discover.html" aria-current="page">Discover</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
       </ul>
@@ -22,7 +34,8 @@
   </header>
 
   <main>
-    <section id="visit-message" class="visit-message"></section>
+    <h1>Discover Layton | Chamber of Commerce</h1>
+    <section id="visit-message" class="visit-message" aria-live="polite"></section>
     <section class="discover-grid" id="discover-grid"></section>
   </main>
 
