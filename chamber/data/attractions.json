@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Antelope Island State Park",
+    "address": "4528 W 1700 S, Syracuse, UT 84075",
+    "description": "A scenic island in the Great Salt Lake offering hiking, wildlife viewing, and stunning sunsets.",
+    "image": "images/antelope-island.webp"
+  },
+  {
+    "title": "Hill Aerospace Museum",
+    "address": "7961 Wardleigh Rd, Hill AFB, UT 84056",
+    "description": "Explore historic aircraft and learn about the Air Force's legacy through interactive exhibits.",
+    "image": "images/hill-museum.webp"
+  },
+  {
+    "title": "Layton Commons Park",
+    "address": "437 N Wasatch Dr, Layton, UT 84041",
+    "description": "A central park with walking paths, playgrounds, and seasonal events.",
+    "image": "images/commons-park.webp"
+  },
+  {
+    "title": "Adams Canyon Trail",
+    "address": "Layton, UT 84040",
+    "description": "A popular hiking trail leading to a waterfall, offering scenic views and a moderate challenge.",
+    "image": "images/adams-canyon.webp"
+  },
+  {
+    "title": "Great Salt Lake Shorelands Preserve",
+    "address": "1002 S 3200 W, Layton, UT 84041",
+    "description": "Wetlands preserve with boardwalks and birdwatching opportunities.",
+    "image": "images/shorelands-preserve.webp"
+  },
+  {
+    "title": "Surf 'n Swim",
+    "address": "465 N Wasatch Dr, Layton, UT 84041",
+    "description": "Indoor wave pool and aquatic center for family fun and fitness.",
+    "image": "images/surf-n-swim.webp"
+  },
+  {
+    "title": "Ellison Park",
+    "address": "700 N 2200 W, Layton, UT 84041",
+    "description": "Sports fields, splash pad, and playgrounds in a spacious park setting.",
+    "image": "images/ellison-park.webp"
+  },
+  {
+    "title": "The Hive Winery",
+    "address": "1220 W Heritage Park Blvd, Layton, UT 84041",
+    "description": "Local winery offering tastings of fruit wines and meads.",
+    "image": "images/hive-winery.webp"
+  }
+]
